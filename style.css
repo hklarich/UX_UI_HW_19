@@ -1,0 +1,402 @@
+body {
+    margin: 0;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo1 {
+    float: left;
+    padding: 30px 0 15px;
+    margin-left: 30px;
+}
+
+.logo2 {
+    float: left;
+    padding: 30px 0 15px;
+    margin-left: 30px;
+}
+
+.logo .logo2 {
+    display: none;
+}
+
+.logo:hover .logo1 {
+    display: none;
+}
+
+.logo:hover .logo2 {
+    display: block;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 50px;
+
+    position: relative;
+}
+
+nav a { 
+    color: black;
+    text-decoration: none;
+    font-family: Koralle NF;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #4469A6;
+}
+    
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #4469A6;
+    border-radius: 10px;
+
+    position: absolute;
+    width: 0%;
+    bottom:0;
+    margin-bottom: -10px;
+
+    transition: ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+hr.solid {
+    border-top: 2px solid #D3DCF2;
+    margin: 0;
+}
+
+/*Hero Section*/
+
+.heroSection {
+    position: relative;
+    /*top: 50px;
+    margin: 20px 100px 100px 100px;
+}
+*/
+
+.profPic {
+    float:right;
+}
+
+h1 {
+    font-family: Koralle NF;
+    font-size: 48px;
+  
+}
+
+h2 {
+    font-family: Koralle NF;
+    font-size: 28px;
+
+}
+
+/*My Skills Section*/
+
+.mySkills {
+    position: relative;
+    top: 50px;
+    margin: 100px;
+}
+
+h3 {
+    font-family: Koralle NF;
+    font-size: 20px;
+}
+
+.myskills {
+    display: flex;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid rgb(98, 55, 116);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+   
+}
+
+.flexbox-item {
+    
+    justify-content: space-evenly;
+    border-color: 2px solid black;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    background-color: #E5EDFF;
+    border-radius: 10px;
+}
+
+.flexbox-item h3 {
+    font-family: Koralle NF;
+    font-size: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.flexbox-item p {
+    justify-items: center;
+    text-align: center;
+}
+
+.flexbox-item img {
+    justify-items: center;
+    text-align: center;
+}
+
+/*My Work Section*/
+
+.myWork {
+    position: relative;
+    top: 50px;
+    margin: 100px;
+}
+
+.workGrid {
+    display: grid;
+    justify-content: space-evenly;
+    border: 2px solid rgb(98, 55, 116);  
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px;
+    row-gap: 20px;
+    grid-template-columns: 30% auto;
+    grid-template-areas: 
+    "item-A item-A1"
+    "item-B item-B1"
+    "item-C item-C1";
+    
+}
+.workGrid-item {
+    background-color: #E5EDFF;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin: 20px;
+    
+}
+
+.workGrid-item item-C {
+    display: inline-flex;
+
+}
+
+.workGrid-item p {
+    justify-items: center;
+    text-align: center;
+}
+
+.workGrid-item h4 {
+    font-family: Koralle NF;
+    font-size: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+#viewAll {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/*footer*/
+
+
+footer {
+    background: #E5EDFF;
+}
+
+footer::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer-nav {
+    float: left;
+}
+
+footer a{ 
+    color: black;
+    text-decoration: none;
+    font-family: Koralle NF;
+    font-size: 18px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-bottom: 50px;
+
+    /*position: relative;*/
+}
+
+footer a{ 
+    color: black;
+    text-decoration: none;
+    font-family: Koralle NF;
+    font-size: 18px;
+}
+
+i.mysize {font-size: 36px;}
+
+footer i {
+    float: right;
+}
+
+    @media only screen and (max-width: 1100px){
+
+        h1{
+            margin: 50px;
+        }
+
+        .heroSection {
+            position: relative;
+            top: 50px;
+            margin: 20px 80px 80px 80px;
+        }
+
+        .mySkills {
+            position: relative;
+            top: 20px;
+            margin: 20px;
+        
+        }
+        
+        .flexContainer {
+            flex-direction: column; 
+      
+        }
+        .flexbox-item {
+            flex-direction: column;
+           
+        } 
+    
+        .myWork {
+            position: relative;
+            top: 20px;
+            margin: 20px;
+        }
+        
+        .workGrid {
+            grid-template-rows: 300px 300px 300px 300px 300px 300px;
+            row-gap: 0px 20px 0px 20px 0px;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "item-A"
+            "item-A1"
+            "item-B"
+            "item-B1"
+            "item-C"
+            "item-C1";
+        }
+    
+    
+    };
+
+@media only screen and (max-width: 600px){
+
+    .heroSection {
+        position: relative;
+        top: 50px;
+        margin: 20px 50px 50px 50px;
+    }
+    
+    .content {
+        position: relative;
+        top: 20px;
+        margin: -15px;
+    
+    }
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+
+    .mySkills {
+        position: relative;
+        top: 20px;
+        margin: 20px;
+    
+    }
+    
+    .flexContainer {
+        flex-direction: column; 
+  
+    }
+    .flexbox-item {
+        flex-direction: column;
+       
+    }
+
+    .myWork {
+        position: relative;
+        top: 20px;
+        margin: 15px;
+    }
+    
+
+    .workGrid {
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        row-gap: 0px 20px 0px 20px 0px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "item-A"
+        "item-A1"
+        "item-B"
+        "item-B1"
+        "item-C"
+        "item-C1";
+    }
+
+   
+}
+
+
