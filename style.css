@@ -3,9 +3,18 @@ body {
     font-weight: 300;
 }
 
-.container {
+.container.profPic {
     width: 80%;
+    height: 75vh;
+
     margin: 0 auto;
+    background-image: url("images/splashHKL.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.profPic .content span {
+    display: block;
 }
 
 header::after {
@@ -15,15 +24,15 @@ header::after {
 }
 
 .logo1 {
-    float: left;
+   
     padding: 30px 0 15px;
-    margin-left: 30px;
+  
 }
 
 .logo2 {
-    float: left;
+   
     padding: 30px 0 15px;
-    margin-left: 30px;
+    
 }
 
 .logo .logo2 {
@@ -87,34 +96,81 @@ nav a:hover::before {
     width: 100%;
 }
 
-hr.solid {
-    border-top: 2px solid #D3DCF2;
-    margin: 0;
+.loving {
+    margin-top: 100px;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: 0.1em;
 }
 
-/*Hero Section*/
-
-.heroSection {
-    position: relative;
-    /*top: 50px;
-    margin: 20px 100px 100px 100px;
+.where {
+    margin-left: 100px;
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 41px;
+    letter-spacing: 0.1em;
 }
-*/
 
-.profPic {
-    float:right;
+.art {
+    font-family: Koralle NF;
+    font-style: bold;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 117px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #831C78;
+
+}
+
+.and {
+    font-family: Teko;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 288px;
+    line-height: 413px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #ABA9C8;
+}
+
+.tech {
+    font-family: Koralle NF;
+    font-style: bold;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 117px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    color: #4469A6;
+}
+
+.collide {
+    font-family: Courier New;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: 0.1em;
+    color: #000000;
 }
 
 h1 {
     font-family: Koralle NF;
     font-size: 48px;
-  
 }
 
 h2 {
     font-family: Koralle NF;
     font-size: 28px;
-
 }
 
 /*My Skills Section*/
