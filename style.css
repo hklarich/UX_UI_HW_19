@@ -1,29 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap');
+
 body {
-    margin: 0;
+    margin: 15px 50px 0px 50px;
     font-weight: 300;
 }
 
 .container.profPic {
-    background-image: url("images/Splash\ Profile\ Pic.png");
-    background-size: contain;
+    background-image: url("images/tryThis.png");
+    background-size: cover;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    width: 85%;
-    height:100vh;
-    background-position: top 80px right 0px;
+    background-attachment: fixed;
+    width: 100%;
+    height:1200px;
+    background-position: top -48px right -30px;
 
 }
 
-.profPic .content span {
-    display: block;
-}
+
 
 /*----------------------------------------NavBar---*/
+
+
 
 .navH1 {
     display: inline-block;
     margin: 24px 0px 0px 0px;
     font-weight: 200;
+}
+
+nav {
+    float: right;
+    
 }
 
 header::after {
@@ -84,26 +91,30 @@ nav a:hover::before {
     width: 100%;
 }
 
+
 /*-------------------------------------------Content---*/
 
 .ux {
+    display: block;
     font-size: 24px;
     color: #1B98CE;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .loving {
     margin-top: 100px;
+    display: block;
     font-family: 'Crimson Text', serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: lighter;
     font-size: 48px;
-    
     letter-spacing: 0.1em;
 }
 
 .where {
+    display: block;
     margin-left: 70px;
+    margin-top: 10px;
     font-family: 'Crimson Text', serif;
     font-style: normal;
     font-weight: normal;
@@ -114,6 +125,8 @@ nav a:hover::before {
 }
 
 .art {
+    display: grid;
+    margin-top: 50px;
     font-family: Koralle NF;
     font-style: normal;
     font-weight: 900;
@@ -127,21 +140,24 @@ nav a:hover::before {
 }
 
 .and {
+    display: grid;
+    margin-left: 248px;
+    margin-top: -170px;
     font-family: Teko;
     font-style: normal;
     font-weight: normal;
     font-size: 288px;
-    
-    display: flex;
     align-items: center;
     letter-spacing: 0.1em;
     color: #ABA9C8;
 }
 
 .tech {
+    display: grid;
+    margin-top: -75px;
     font-family: Koralle NF;
     font-style: bold;
-    font-weight: normal;
+    font-weight: 900;
     font-size: 96px;
     line-height: 117px;
     display: flex;
@@ -151,6 +167,9 @@ nav a:hover::before {
 }
 
 .collide {
+    display: grid;
+    margin-top: -20px;
+    margin-left: 800px;
     font-family: 'Crimson Text', serif;
     font-style: normal;
     font-weight: normal;
@@ -169,6 +188,122 @@ h2 {
     font-family: Koralle NF;
     font-size: 28px;
 }
+
+/*------------------------------------------Science Section---*/
+
+.container.sciencePsy {
+    display: table;
+    background-image: url("images/Rectangle\ 59.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.light {
+    display: grid;
+    margin-top: 200px;
+    margin-left: 150px
+}
+
+.science {
+    display: grid;
+    letter-spacing: 0.1em;
+    color: #8DA656;
+    font-family: Koralle NF;
+    font-size: 144px;
+    margin-top: -275px;
+    margin-left: 335px;   
+}
+
+.anotherAnd {
+    display: grid;
+    margin-left: 949px;
+    margin-top: -125px;
+    font-family: Teko;
+    font-size: 144px;
+    letter-spacing: 0.1em;
+    color: rgba(133, 143, 110, 0.5);
+}
+
+.psy {
+    display: grid;
+    margin-left: 700px;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-family: Koralle NF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    letter-spacing: 0.1em;
+    color: #DFA716;
+
+}
+
+.inspire {
+    display: grid;
+    margin-left: 1000px;
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+}
+
+
+/*------------------------------------------User Research Content Three Section---*/
+
+.three {
+    font-family: 'Crimson Text', serif;
+    font-size: 36px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.container.tribe {
+    display: table;
+    background-image: url("images/backgroundShapes.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1424px;
+}
+
+.tribe {
+    font-family: Koralle NF;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    display: flex;
+    letter-spacing: 0.05em;
+    color: #4469A6;
+}
+
+.website {
+    font-family: Koralle NF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    display: flex;
+    letter-spacing: 0.05em;
+    color: #48577D;
+}
+
+.teach {font-family: Koralle NF;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+        color: #623496;
+    
+}
+
+.tribeLogo {
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
 
 /*------------------------------------------My Skills Section---*/
 
@@ -203,7 +338,7 @@ h3 {
     border-color: 2px solid black;
     padding: 20px 20px 20px 20px;
     margin: 20px;
-    background-color: #E5EDFF;
+    /*background-color: #E5EDFF;*/
     border-radius: 10px;
 }
 
@@ -279,7 +414,22 @@ h3 {
 
 /*------------------------------------------------footer---*/
 
+footer {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+footer p{
+    font-family: Koralle NF;
+    font-size: 20px;
+    padding: 0 0 0 30px; 
+
+
+}
+
+/*
 footer {
     background: #E5EDFF;
 }
@@ -313,6 +463,8 @@ footer li {
     padding-bottom: 50px;
 
     /*position: relative;*/
+
+/*
 }
 
 footer a{ 
@@ -322,12 +474,13 @@ footer a{
     font-size: 18px;
 }
 
+
 i.mysize {font-size: 36px;}
 
 footer i {
     float: right;
 }
-
+*/
 
 
     @media only screen and (max-width: 1100px){

@@ -9,28 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Share+Tech+Mono&family=Teko&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Share+Tech+Mono&family=Source+Code+Pro&family=Teko&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Crimson+Text&family=Share+Tech+Mono&family=Source+Code+Pro&family=Teko&display=swap" rel="stylesheet">
     <title>HKL Portfolio</title>
 
 </head>
 <body>
 <header>
-    <div class="container profPic">
-       <div><h1 class="navH1">HEATHER KLARICH LaPIETRA</h1>
-        <nav>
-            <ul class="main-nav">
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">Who?</a></li>
-                <li><a href="#">Email</a></li>
-            </ul>
-        </nav> 
+    <div class="parallax container profPic">
+        <div class="navbar">
+       <div><h1 class="navH1 animate__animated animate__fadeInDown">HEATHER KLARICH LaPIETRA</h1>
+        
+            <nav>
+                <ul class="main-nav animate__animated animate__fadeInDown" >
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Who?</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </nav> 
+        
         </div>
+    </div>
     <div class="content">
         <h2><span class="ux">UX/UI Design</span> 
             <span class="loving">Loving<br>
-            the<br/>
-            places</span>
+            the places</span>
             <span class="where">where</span>
             <span class="art">ART</span>
             <span class="and">&</span>
@@ -41,6 +49,54 @@
     </div>
 </header>
 
+ <!--  Science section-------------------------->
+
+<section class="container sciencePsy">
+    <div class="contentTwo">
+        <div class="light"><img src="images/light bulb.png">
+        <h2><span class="science">science</span> 
+            <span class="anotherAnd">&</span>
+            <span class="psy">pyscholgy</span>
+            <span class="inspire">inspiring creative minds</span>
+        </h2>
+        </div>
+    </div>
+</section>
+
+ <!--  User Research section-------------------------->
+
+ <section class="container research">
+    <div class="contentThree">
+        <h2 class="three">Identify. Define. Research. Develop. Test. Iterate.</h2>
+        <h2><span class="userResearch">User Research</span> 
+        <div class="contentThree"><img src="images/Ducks.png">
+        
+        <span class="everyDuck"></span>
+            <span class="every">Every duck has a unique user story.</span>
+            <span class="inorder">In order to perfect the gentle navigation of their collective flow, one must walk amoung.</span>
+        </h2>
+        </div>
+    </div>
+</section>
+
+ <!--  TRIBE section coded using CSS flex -->
+
+ <section class="container tribe">
+    <div class="contentTribe">
+        <h2><span class="tribe">TRIBE</span> 
+            <span class="website">Website Redesign</span>
+            <span class="teach">Teach. Reach. Inspire. Build. Empower.</span>
+            <span class="read">Read More</span>
+        </h2>
+        <div class="tribeLogo"><img src="images/TRIBE logo.png"></div>
+        <div class="powder"><img src="images/TRIBE Dust.png"></div>
+    </div>
+</section>
+
+
+ <!--  My Wanderlust section coded using CSS flex -->
+
+
  <!--  My UX Skills section coded using CSS flex -->
 
 <section class="mySkills">
@@ -48,7 +104,7 @@
         <h1>My UX Skills</h1>
         <div class="flexContainer">
             <div class="flexbox-item">
-                <img src="Images/placeholder_pic.png">
+                <img src="images/Ducks.png">
                 <h3>User Research</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
             </div>
@@ -100,19 +156,16 @@
 </section>
 
 <footer>
-    <hr class="solid">
-    <div class="container">
-        <ul class="footer-nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
-        <i class= "material-icons mysize">send</i>
-        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+    <div class="footer">
+        <p><img src="images/cupcake.png"></p>
+        <p>Copyright 2021</p>
+        
     </div>
     
 </footer>
+<script src=”jquery.min.js”></script>
+<script src=”jquery.rellax.min.js></script>
+<script src="js/index.js"></script>  
 </body>
 </html>
 
