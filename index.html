@@ -20,30 +20,29 @@
 </head>
 <body>
 <header>
-    <div class="parallax container profPic">
+    <div class="container profPic">
         <div class="navbar">
-       <div><h1 class="navH1 animate__animated animate__fadeInDown">HEATHER KLARICH LaPIETRA</h1>
-        
-            <nav>
-                <ul class="main-nav animate__animated animate__fadeInDown" >
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="#">Who?</a></li>
-                    <li><a href="#">Email</a></li>
-                </ul>
-            </nav> 
-        
-        </div>
+            <div><h1 class="navH1 animate__animated animate__fadeInDown">HEATHER KLARICH LaPIETRA</h1>
+                <nav>
+                    <ul class="main-nav animate__animated animate__fadeInDown" >
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Who?</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </nav> 
+            </div>
     </div>
+
     <div class="content">
         <h2><span class="ux">UX/UI Design</span> 
             <span class="loving">Loving<br>
             the places</span>
             <span class="where">where</span>
-            <span class="art">ART</span>
+            <span class="scroll art" data-rate="0.25" data-direction="verticle">ART</span>
             <span class="and">&</span>
-            <span class="tech">TECHNOLOGY</span>
-            <span class="collide">collide..</span>
+            <span class="scroll tech" data-rate="-0.25" data-direction="verticle">TECHNOLOGY</span>
+            <span class="scroll collide" data-rateX="-1.5" data-rateY="-0.25" data-direction="horizontal">collide..</span>
         </h2>
     </div>
     </div>
@@ -166,6 +165,9 @@
 <script src=”jquery.min.js”></script>
 <script src=”jquery.rellax.min.js></script>
 <script src="js/index.js"></script>  
+
+<script src="lodash.js"></script>
+
 </body>
 </html>
 
